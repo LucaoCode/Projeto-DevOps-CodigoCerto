@@ -10,8 +10,8 @@ COPY requirements.txt .
 # run install all dependencies from python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# copy all aplication
+# copy all application
 COPY . .
 
-# comand for execute the aplication
+# comand for execute the application
 CMD [ "python", "src/app/main.py" ]
